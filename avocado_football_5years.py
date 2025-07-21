@@ -73,4 +73,4 @@ ax1.legend(lines, labels, loc='upper left', fontsize=10, framealpha=1)
 ax1.grid(True, linestyle='--', alpha=0.6)
 plt.tight_layout()
 plt.show()
-#изменение файла
+#изменение файл
