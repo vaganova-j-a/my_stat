@@ -10,6 +10,7 @@ try:
 except:
     locale.setlocale(locale.LC_TIME, 'Russian_Russia.1251')
 
+
 # Загрузка данных
 avocado = pd.read_csv('avocado_sales_2018_2023_rise.csv')
 football = pd.read_csv('football_viewers_2018_2023_rise.csv')
@@ -72,5 +73,7 @@ ax1.legend(lines, labels, loc='upper left', fontsize=10, framealpha=1)
 # Сетка
 ax1.grid(True, linestyle='--', alpha=0.6)
 plt.tight_layout()
+plt.savefig('plot.png')
+
 plt.show()
 #изменение файла
